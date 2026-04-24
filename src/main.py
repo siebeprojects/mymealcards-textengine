@@ -46,4 +46,8 @@ def compile_language(language_code: str) -> Tree:
 
 if __name__ == "__main__":
     tree = compile_language("en")
-    print(tree)
+    for card_id, card in tree.cards.items():
+        print(f"{card.cardid}  {card.header}")
+        print(f"  {card.description}")
+        print(f"  {card.footer}")
+        print()

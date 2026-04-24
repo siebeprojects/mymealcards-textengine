@@ -99,7 +99,7 @@ Clone the repository and install the single dependency:
 ```bash
 git clone https://github.com/your-org/mymealcards-textengine.git
 cd mymealcards-textengine
-pip install -r requirements.txt
+pip install jsonschema
 ```
 
 Run the compiler from the project root:
@@ -174,8 +174,7 @@ src/
 ├── data/                        # JSON data files
 │   ├── *.core.json              # Language-agnostic definitions
 │   └── [entity]/[entity].en.json  # English localizations
-├── schemas/                     # JSON Schema validation files
-└── import/                      # Example import lists
+└── schemas/                     # JSON Schema validation files
 ```
 
 ---

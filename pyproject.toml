@@ -1,0 +1,8 @@
+[project]
+name = "ast-card-compiler"
+version = "0.1.0"
+description = "Proof-of-concept AST compiler for generating localised card objects from structured JSON data."
+requires-python = ">=3.10"
+dependencies = [
+    "jsonschema>=4.0",
+]
