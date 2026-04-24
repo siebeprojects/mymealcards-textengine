@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Schema for languages.core.json — supported language definitions",
+  "type": "object",
+  "patternProperties": {
+    "^[a-z]{2}$": {
+      "type": "object",
+      "required": ["name", "direction"],
+      "properties": {
+        "name":      { "type": "string" },
+        "direction": { "type": "string", "enum": ["ltr", "rtl"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

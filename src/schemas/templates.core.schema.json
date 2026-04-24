@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Schema for templates.core.json — template metadata (args and type classification)",
+  "type": "object",
+  "patternProperties": {
+    "^[a-z0-9_]+$": {
+      "type": "object",
+      "required": ["args", "type"],
+      "properties": {
+        "args": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["concepts"] }
+        },
+        "type": {
+          "type": "string",
+          "enum": ["header", "statement", "question", "label", "footer"]
+        },
+        "fallback": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

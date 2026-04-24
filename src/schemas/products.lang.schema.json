@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Schema for products.{lang}.json — localized product display labels",
+  "type": "object",
+  "patternProperties": {
+    "^[a-z0-9_]+$": {
+      "type": "object",
+      "required": ["label", "label-pdf"],
+      "properties": {
+        "label":     { "type": "string" },
+        "label-pdf": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

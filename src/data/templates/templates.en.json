@@ -1,0 +1,57 @@
+{
+    "header_list": {
+        "template": "{concepts:list(and)}"
+    },
+
+    "header_type0": {
+        "template": "{concepts:list(and)} Type0"
+    },
+
+    "header_type1": {
+        "template": "{concepts:single}-Free"
+    },
+
+    "header_type2": {
+        "template": "{concepts:single} Type1"
+    },
+
+    "statement_type0": {
+        "template": "This should not contain the following: {concepts:list(and)}."
+    },
+
+    "statement_type1": {
+        "template": "No {concepts:list(neg_all)}. Even small amounts may cause a severe reaction."
+    },
+
+    "statement_type2": {
+        "template": "For secondary reasons, no items containing {concepts:list(or)}."
+    },
+
+    "statement_type3": {
+        "template": "For primary reasons, no items containing {concepts:list(or)}."
+    },
+
+    "statement_type4": {
+        "template": "No items containing {concepts:list(or)}."
+    },
+
+    "footer_type0": {
+        "template": "Please respect this. Thank you."
+    },
+
+    "footer_type1": {
+        "template": "This is important. Thank you."
+    },
+
+    "footer_type2": {
+        "template": "Avoid any cross-contact. Thank you."
+    },
+
+    "question_type0": {
+        "template": "Does this contain {concepts:list(or)}?"
+    },
+
+    "example_item": {
+        "template": "{concepts:single}"
+    }
+}

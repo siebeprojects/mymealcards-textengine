@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Schema for ui.{lang}.json — localized labels for UI elements marked as localized",
+  "type": "object",
+  "patternProperties": {
+    "^[a-z0-9_]+$": {
+      "type": "object",
+      "required": ["label"],
+      "properties": {
+        "label": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

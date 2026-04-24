@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Schema for ui.core.json — UI element definitions with localization flag",
+  "type": "object",
+  "patternProperties": {
+    "^[a-z0-9_]+$": {
+      "type": "object",
+      "required": ["localized"],
+      "properties": {
+        "localized": { "type": "boolean" },
+        "value":     { "type": "string" }
+      },
+      "if":   { "properties": { "localized": { "const": false } }, "required": ["localized"] },
+      "then": { "required": ["value"] },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

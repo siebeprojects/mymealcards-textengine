@@ -1,0 +1,37 @@
+{
+    "concept0": {
+        "forms": {
+            "noun_singular": "concept zero",
+            "noun_plural": "concepts zero",
+            "attributive": "concept-zero"
+        }
+    },
+    "concept1": {
+        "forms": {
+            "noun_singular": "concept one",
+            "noun_plural": "concepts one"
+        }
+    },
+    "concept2": {
+        "forms": {
+            "noun_singular": "concept two",
+            "attributive": "concept-two"
+        }
+    },
+    "concept3": {
+        "forms": {
+            "noun_singular": "concept three",
+            "noun_plural": "concepts three",
+            "attributive": "concept-three"
+        },
+        "display": {
+            "label": "{noun_singular}"
+        }
+    },
+    "concept4": {
+        "forms": {
+            "noun_singular": "concept four",
+            "noun_plural": "concepts four"
+        }
+    }
+}

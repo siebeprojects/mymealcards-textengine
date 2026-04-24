@@ -1,0 +1,25 @@
+{
+    "copyright": {
+        "localized": false,
+        "value": "Copyright © 2026 Example Corp"
+    },
+
+    "company": {
+        "localized": false,
+        "value": "Example Corp"
+    },
+
+    "license": {
+        "localized": false,
+        "value": "For demonstration purposes only."
+    },
+
+    "licenseurl": {
+        "localized": false,
+        "value": "https://example.com/terms"
+    },
+
+    "moredetails": {
+        "localized": true
+    }
+}

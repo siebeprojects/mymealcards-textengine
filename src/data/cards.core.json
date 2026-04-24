@@ -1,0 +1,143 @@
+{
+    "card0": {
+        "cardid": "DEMO001",
+        "cardgroup": "cardgroup0",
+        "scope": {
+            "mode": "template",
+            "template_key": "header_list",
+            "concepts": [
+                "concept0"
+            ]
+        },
+        "header": {
+            "mode": "template",
+            "template_key": "header_type0",
+            "concepts": [
+                "concept0"
+            ]
+        },
+        "description": {
+            "mode": "template",
+            "template_key": "statement_type0",
+            "concepts": [
+                "concept0",
+                "concept1"
+            ]
+        },
+        "subheader": {
+            "mode": "template",
+            "template_key": "question_type0",
+            "concepts": [
+                "concept0"
+            ]
+        },
+        "examples": {
+            "mode": "template",
+            "template_key": "example_item",
+            "concepts_left": [
+                "concept0",
+                "concept1"
+            ],
+            "concepts_right": []
+        },
+        "footer": {
+            "mode": "template",
+            "template_key": "footer_type2"
+        }
+    },
+
+    "card1": {
+        "cardid": "DEMO002",
+        "cardgroup": "cardgroup0",
+        "scope": {
+            "mode": "template",
+            "template_key": "header_list",
+            "concepts": [
+                "concept0",
+                "concept2"
+            ]
+        },
+        "header": {
+            "mode": "template",
+            "template_key": "header_type0",
+            "concepts": [
+                "concept0",
+                "concept2"
+            ]
+        },
+        "description": {
+            "mode": "template",
+            "template_key": "statement_type0",
+            "concepts": [
+                "concept0",
+                "concept2"
+            ]
+        },
+        "subheader": {
+            "mode": "template",
+            "template_key": "question_type0",
+            "concepts": [
+                "concept0",
+                "concept2"
+            ]
+        },
+        "examples": {
+            "mode": "template",
+            "template_key": "example_item",
+            "concepts_left": [
+                "concept0",
+                "concept2",
+                "concept3"
+            ],
+            "concepts_right": [
+                "concept4"
+            ]
+        },
+        "footer": {
+            "mode": "template",
+            "template_key": "footer_type2"
+        }
+    },
+
+    "card2": {
+        "cardid": "DEMO003",
+        "cardgroup": "cardgroup1",
+        "medicaltype": "medicaltype1",
+        "scope": {
+            "mode": "template",
+            "template_key": "header_list",
+            "concepts": [
+                "concept3"
+            ]
+        },
+        "header": {
+            "mode": "static"
+        },
+        "description": {
+            "mode": "template",
+            "template_key": "statement_type2",
+            "concepts": [
+                "concept3"
+            ]
+        },
+        "subheader": {
+            "mode": "template",
+            "template_key": "question_type0",
+            "concepts": [
+                "concept3"
+            ]
+        },
+        "examples": {
+            "mode": "template",
+            "template_key": "example_item",
+            "concepts_left": [
+                "concept3"
+            ],
+            "concepts_right": []
+        },
+        "footer": {
+            "mode": "template",
+            "template_key": "footer_type1"
+        }
+    }
+}

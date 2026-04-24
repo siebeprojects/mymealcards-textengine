@@ -1,0 +1,15 @@
+{
+    "medicaltype0": {
+        "forms": {
+            "singular": "type zero",
+            "plural": "types zero"
+        }
+    },
+
+    "medicaltype1": {
+        "forms": {
+            "singular": "type one",
+            "plural": "types one"
+        }
+    }
+}

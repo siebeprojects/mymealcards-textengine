@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Schema for medicaltypes.{lang}.json — localized singular and plural forms per medical type",
+  "type": "object",
+  "patternProperties": {
+    "^[a-z0-9_]+$": {
+      "type": "object",
+      "required": ["forms"],
+      "properties": {
+        "forms": {
+          "type": "object",
+          "required": ["singular", "plural"],
+          "properties": {
+            "singular": { "type": "string" },
+            "plural":   { "type": "string" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

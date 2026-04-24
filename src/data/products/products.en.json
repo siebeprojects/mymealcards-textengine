@@ -1,0 +1,11 @@
+{
+    "product0": {
+        "label": "Card Zero Demo",
+        "label-pdf": "Card Zero Demo (PDF)"
+    },
+
+    "product1": {
+        "label": "Card One Demo",
+        "label-pdf": "Card One Demo (PDF)"
+    }
+}

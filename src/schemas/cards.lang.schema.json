@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Schema for cards.{lang}.json — static field overrides per card per language",
+  "type": "object",
+  "patternProperties": {
+    "^[a-z0-9_]+$": {
+      "type": "object",
+      "properties": {
+        "header":      { "type": "string" },
+        "description": { "type": "string" },
+        "subheader":   { "type": "string" },
+        "scope":       { "type": "string" },
+        "footer":      { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

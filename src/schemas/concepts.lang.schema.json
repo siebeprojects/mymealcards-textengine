@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "patternProperties": {
+    "^[a-z0-9_]+$": {
+      "type": "object",
+      "required": [
+        "forms"
+      ],
+      "properties": {
+        "gender": {
+          "type": "string",
+          "enum": ["masculine", "feminine", "neuter"]
+        },
+        "forms": {
+          "type": "object",
+          "properties": {
+            "noun_singular": {
+              "type": "string"
+            },
+            "noun_plural": {
+              "type": "string"
+            },
+            "attributive": {
+              "type": "string"
+            }
+          }
+        },
+        "display": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

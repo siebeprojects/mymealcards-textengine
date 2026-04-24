@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Schema for cards.core.json — card definitions with template/static field rendering",
+  "$defs": {
+    "cardField": {
+      "type": "object",
+      "required": ["mode"],
+      "properties": {
+        "mode":         { "type": "string", "enum": ["static", "template"] },
+        "template_key": { "type": "string" },
+        "concepts":     { "type": "array", "items": { "type": "string" } },
+        "value":        { "type": "string" }
+      },
+      "if":   { "properties": { "mode": { "const": "template" } }, "required": ["mode"] },
+      "then": { "required": ["template_key"] },
+      "additionalProperties": false
+    }
+  },
+  "type": "object",
+  "patternProperties": {
+    "^[a-z0-9_]+$": {
+      "type": "object",
+      "required": ["cardid", "cardgroup", "scope", "header", "description", "subheader", "examples", "footer"],
+      "properties": {
+        "cardid":      { "type": "string", "pattern": "^DEMO[0-9]{3}$" },
+        "cardgroup":   { "type": "string" },
+        "medicaltype": { "type": "string" },
+        "scope":       { "$ref": "#/$defs/cardField" },
+        "header":      { "$ref": "#/$defs/cardField" },
+        "description": { "$ref": "#/$defs/cardField" },
+        "subheader":   { "$ref": "#/$defs/cardField" },
+        "examples": {
+          "type": "object",
+          "required": ["mode", "template_key"],
+          "properties": {
+            "mode":           { "type": "string", "enum": ["template"] },
+            "template_key":   { "type": "string" },
+            "concepts_left":  { "type": "array", "items": { "type": "string" } },
+            "concepts_right": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        },
+        "footer": { "$ref": "#/$defs/cardField" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

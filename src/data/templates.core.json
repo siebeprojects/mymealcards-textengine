@@ -1,0 +1,82 @@
+{
+    "header_list": {
+        "args": ["concepts"],
+        "type": "header",
+        "fallback": ["display.label", "forms.noun_plural", "forms.noun_singular"]
+    },
+
+    "header_type0": {
+        "args": ["concepts"],
+        "type": "header",
+        "fallback": ["forms.attributive"]
+    },
+
+    "header_type1": {
+        "args": ["concepts"],
+        "type": "header",
+        "fallback": ["forms.attributive"]
+    },
+
+    "header_type2": {
+        "args": ["concepts"],
+        "type": "header",
+        "fallback": ["forms.attributive"]
+    },
+
+    "statement_type0": {
+        "args": ["concepts"],
+        "type": "statement",
+        "fallback": ["forms.noun_plural", "forms.noun_singular"]
+    },
+
+    "statement_type1": {
+        "args": ["concepts"],
+        "type": "statement",
+        "fallback": ["forms.noun_plural", "forms.noun_singular"]
+    },
+
+    "statement_type2": {
+        "args": ["concepts"],
+        "type": "statement",
+        "fallback": ["forms.noun_plural", "forms.noun_singular"]
+    },
+
+    "statement_type3": {
+        "args": ["concepts"],
+        "type": "statement",
+        "fallback": ["forms.noun_plural", "forms.noun_singular"]
+    },
+
+    "statement_type4": {
+        "args": ["concepts"],
+        "type": "statement",
+        "fallback": ["forms.noun_plural", "forms.noun_singular"]
+    },
+
+    "footer_type0": {
+        "args": [],
+        "type": "footer"
+    },
+
+    "footer_type1": {
+        "args": [],
+        "type": "footer"
+    },
+
+    "footer_type2": {
+        "args": [],
+        "type": "footer"
+    },
+
+    "question_type0": {
+        "args": ["concepts"],
+        "type": "question",
+        "fallback": ["forms.noun_plural", "forms.noun_singular"]
+    },
+
+    "example_item": {
+        "args": ["concepts"],
+        "type": "label",
+        "fallback": ["display.label", "forms.noun_singular"]
+    }
+}
