@@ -2,7 +2,7 @@
 
 A prototype compiler that transforms structured JSON data definitions into fully rendered, localizable card objects via an Abstract Syntax Tree (AST) pipeline.
 
-All data in example/placeholder data (`concept0`, `medicaltype1`, etc.) is intended to demonstrate the compiler's architecture. No real domain data is included.
+All data used in this repository is intended to demonstrate the compiler's architecture. No real domain data is included.
 
 ---
 
